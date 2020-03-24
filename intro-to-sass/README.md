@@ -29,6 +29,32 @@ CONDITIONS  and LOOPS can also be used.
 In order to compile SASS it should be installed. 
 SASS is a Ruby gem, a tool build with Ruby and therefore it requires the Ruby runtime to work.
 
+BUT 
+
+I can use node scripts 
+
+#### Npm Scripts
+Npm has a run command that can run scripts defined in the scripts property of a package.json file. If you’ve ever used a package that asked you to run a command like npm run test (or similar) then you have used npm scripts.
+
+To use npm scripts as a build tool define a bunch of scripts in a package.json file, similar to defining the tasks i want to run in a config file in other build tools. The difference with npm scripts is that it is going to run the package CLI without any plugins, then chain the scripts together so to trigger a build with a single command. 
+
+##### Compile Sass to CSS
+##### Concatenate and minify CSS and JavaScript
+##### Optimize images
+
+ to compile our Sass file to CSS using the node-sass package. First we need to install it:
+ #### npm install node-sass --save-dev
+
+Note that the * --save-dev*  saves this package in the devDependencies section of the package.json file. This makes it easy for other developers to install the required packages in the future by simply running npm install.
+
+#### Lifecycle Scripts
+Node also allows you to run custom scripts for certain lifecycle events, like after npm install is run. 
+```js
+"scripts": {
+    "postinstall": "electron-rebuild",
+},
+```
+
 
 
 

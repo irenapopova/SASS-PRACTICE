@@ -1,9 +1,22 @@
 body {
     font-family: 'Montserrat', sans-serif;
+    margin: 0;
 }
 
 #product-overview {
     background: #ff1b68;
+    /* adding layer padding to my element */
+    /*margin: */
+    padding: 10px;
+    border: 5px black solid;
+    /* short way of adding the following 3:
+        border-style: solid;
+        border-color: black;
+        border-width: 5px;
+          */
+    /*margin: 20px;*/
+    width: 100%;
+    height: 528px;
 }
 
 /* SELECTOR - h1 */
@@ -22,20 +35,30 @@ cascading, cascading means that multiple styles/rules can be applied to the same
 /* tag selectors have the lowest specificity and inline styles the highest. */
 
 /* i HAVE TO BE AWARE OF HOW THEY OVERWRITE each other*/
-h1 {
+.section-title {
+    color: #2ddf5c;
+    font-family: inherit;
+}
+
+/* I can add a combinator to the h1 selector to narrow down which tyle of h1 tags I want to select */
+#product-overview h1 {
     color: white;
     font-family: 'Anton', sans-serif;
     /* sens-serif is a browser default font */
-
 }
 
-.section-title {
-    color: #2ddf5c;
-    font-family: sens-serif;
+/* with padding the content of the element is considered plus any margin,  */
+
+/* padding and margin should not overlap hence the padding is added after the margin of child elements */
+h1 {
+    font-family: sans-serif;
 }
+
 
 /* the problem with the start selector is that it is very inefficient the way CSS has to parse all other elements, therefore I will use it but not for a global font family, I will use the body to wrap the whole content*/
 /* 
 * {
     font-family: sens-serif;
 }  */
+
+/* every element has a layer - margin, border, padding, */

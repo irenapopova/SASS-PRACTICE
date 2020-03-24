@@ -1,13 +1,41 @@
-section {
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+#product-overview {
     background: #ff1b68;
 }
 
 /* SELECTOR - h1 */
+/* there are multiple rules affects the same element it is the 
+cascading, cascading means that multiple styles/rules can be applied to the same element. These rules may lead to conflict.
+ */
 
+/*Solving a problem like this I use SPECIFICITY */
+/* THERE ARE RULES in CSS that define how such conflict should be resolved and which type of selector has higher specificity*/
+/* the tag selector and also pseudo elements selectors have the lowest priority, also the universal selector and the star */
 
+/* a higher specificity is assigned to class and pseudo class selectors, they are on the same level */
+
+/* a higher specificity is assigned to ID - selectors , so if an element has a tag, a class and an ID selector and they all set the color of the element , the ID selector would win , no matter where it is positioned in the css file. The highest priority is assigned to inline style. If I have them they will overwrite the other styles, they have highest specificity */
+
+/* tag selectors have the lowest specificity and inline styles the highest. */
+
+/* i HAVE TO BE AWARE OF HOW THEY OVERWRITE each other*/
 h1 {
     color: white;
     font-family: 'Anton', sans-serif;
     /* sens-serif is a browser default font */
 
 }
+
+.section-title {
+    color: #2ddf5c;
+    font-family: sens-serif;
+}
+
+/* the problem with the start selector is that it is very inefficient the way CSS has to parse all other elements, therefore I will use it but not for a global font family, I will use the body to wrap the whole content*/
+/* 
+* {
+    font-family: sens-serif;
+}  */

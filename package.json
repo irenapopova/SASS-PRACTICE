@@ -1,0 +1,16 @@
+{
+  "name": "js-sass",
+  "version": "1.0.0",
+  "description": "node-sass practice",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w sass -o public/css"
+  },
+  "author": "Irena Popova",
+  "license": "No",
+  "dependencies": {
+    "node": "^13.11.0",
+    "node-sass": "^4.9.0",
+    "sass": "^1.26.3"
+  }
+}

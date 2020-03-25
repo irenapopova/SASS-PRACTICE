@@ -72,10 +72,11 @@ cascading, cascading means that multiple styles/rules can be applied to the same
     vertical-align: middle;
 }
 
-.plan--highlighted{
+.plan--highlighted {
     background: #19b84c;
     color: white;
     box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+
 }
 
 

@@ -79,6 +79,17 @@ cascading, cascading means that multiple styles/rules can be applied to the same
 
 }
 
+.plan__annotation {
+    background: white;
+    color: #19b84c;
+    padding: 8px;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+.plan__features {
+    list-style: none;
+}
 
 /* with padding the content of the element is considered plus any margin,  */
 

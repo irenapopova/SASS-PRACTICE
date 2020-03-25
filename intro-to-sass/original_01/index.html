@@ -11,6 +11,34 @@
     <link rel="stylesheet" href="main.css">
 
 <body>
+
+    <header class="main-header">
+        <div>
+            <a href="index.html">uHost</a>
+        </div>
+
+        <nav>
+
+            <!--with creating a ul css class assignment i am targeting the list items, the way CSS classes are written is called BEM (Block Element Modifier)-->
+            <ul class="main-nav__items">
+                <li class="main-nav__items">
+                    <a href="packages/index.html">Packages</a>
+                </li>
+                <li class="main-nav__items">
+                    <!--anchor tag <a>-->
+                    <a href="customers/index.html">Customers</a>
+                    <!--what the display block property enforces is  with the display property I can change -->
+                    <a href="customers/index.html" style="display: none">Customers</a>
+                    <!--The display  property can be set to none and can be invisible or transparent, it has also taken out of the document , but it is part of the DOM it is not removed from there , it is removed just from the visible document flow -->
+                </li>
+                <li class="main-nav__items">
+                    <a href="start-hosting/index.html">Start Hosting</a>
+                </li>
+
+                </ui>
+
+        </nav>
+    </header>
     <main>
         <!---I can assign id to the sections -->
         <!-- the two ids allow me to set my rules -->

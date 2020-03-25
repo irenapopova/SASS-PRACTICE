@@ -113,6 +113,46 @@ cascading, cascading means that multiple styles/rules can be applied to the same
     margin: 8px 0;
 }
 
+.button {
+    background: darkgreen;
+    color: white;
+    /* inherit forces the inherited styles to be applied */
+    font: inherit;
+    border: 1.5px solid darkgreen;
+    padding: 8px;
+    border-radius: 8px;
+    font-weight: bold;
+    /* with cursor property , when hover over button a hand appear, can be added to elements i want to be clickable*/
+    cursor: pointer;
+
+}
+
+/* to make buttons clickable and change color on hover*/
+.button:hover,
+.button:active {
+    background: white;
+    color: #0e4f1f;
+
+}
+
+/*when hover over the button the default border around it disapears*/
+.button:focus {
+    outline: none;
+}
+
+
+#key-features {
+    background: #ff1b68;
+    margin-top: 80px;
+    padding: 16px;
+
+}
+
+#key-features .section-title {
+    color: white;
+    margin: 32px;
+}
+
 /* with padding the content of the element is considered plus any margin,  */
 
 /* padding and margin should not overlap hence the padding is added after the margin of child elements */

@@ -59,6 +59,26 @@ cascading, cascading means that multiple styles/rules can be applied to the same
     /* sens-serif is a browser default font */
 }
 
+/*====== Adding PLANS ============*/
+
+/* adding the plan class selector */
+.plan {
+    background: #d5ffdc;
+    text-align: center;
+    padding: 16px;
+    margin: 8px;
+    display: inline-block;
+    width: 30%;
+    vertical-align: middle;
+}
+
+.plan--highlighted{
+    background: #19b84c;
+    color: white;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+
 /* with padding the content of the element is considered plus any margin,  */
 
 /* padding and margin should not overlap hence the padding is added after the margin of child elements */

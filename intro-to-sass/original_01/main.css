@@ -74,7 +74,20 @@ h1 {
 
 /* every element has a layer - margin, border, padding, */
 
+/* the class should be descriptive*/
 .main-header {
     width: 100%;
+    background: #2ddf5c;
+    /*i use padding value shorthand ,padding top and bottom is set to 8 px, and to left and right 16px*/
+    padding: 8px 16px;
 
+}
+
+/* the display property alowes to change the behavior of an element from block to inline or even to inline-block which is a mixture or to none to remove it from the DOM even */
+
+/* bellow i am setting the class which I assign to a list item, to mix the behavior of the elements */
+/* these elements can go next to each other now but they still behave like block level elements when it comes to setting top and bottom margins, setting paddings, things that are not possible on inline elements.   */
+.main-nav__items {
+    display: inline-block;
+    /*this mixes the behavior of both inline and block elements to set them in one line */
 }

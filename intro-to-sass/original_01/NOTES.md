@@ -181,6 +181,7 @@ Logically, this makes sense since you don't want your inline elements to destroy
 
 Some example elements are: <a> , <span> , <img> 
 
+###I can add more than one class to an element.
 #### Pseudo Classes and Pseudo Elements
 
 What is the difference?

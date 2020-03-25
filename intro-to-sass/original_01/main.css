@@ -83,11 +83,57 @@ h1 {
 
 }
 
+/* selecting child div*/
+.main-header>div {
+    display: inline-block;
+    vertical-align: middle;
+
+}
+
+.main-header__brand {
+    color: red;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+}
+
+/*list items are children of unordered list due to inheritance*/
+.main-nav {
+    display: inline-block;
+    text-align: right;
+    width: calc(100% - 74px);
+    /*with vertical align I moved the nav to the right*/
+    vertical-align: middle;
+}
+
 /* the display property alowes to change the behavior of an element from block to inline or even to inline-block which is a mixture or to none to remove it from the DOM even */
+
+.main-nav__items {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
 
 /* bellow i am setting the class which I assign to a list item, to mix the behavior of the elements */
 /* these elements can go next to each other now but they still behave like block level elements when it comes to setting top and bottom margins, setting paddings, things that are not possible on inline elements.   */
-.main-nav__items {
+.main-nav__item {
     display: inline-block;
     /*this mixes the behavior of both inline and block elements to set them in one line */
+    margin: 0 16px;
+
+
+}
+
+/*below this is a high performance selector, it is not necessary to create an extra class , this below is perfectly fine way of selecting nested element */
+.main-nav__item a {
+    text-decoration: none;
+}
+
+/* using a pseudo class to hover over the element and change color*/
+.main-nav__item a:hover {
+    color: white;
+}
+
+.main-nav__item a:active {
+    color: white;
 }

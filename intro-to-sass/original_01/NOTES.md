@@ -180,3 +180,7 @@ Additionally, setting a width  or height  on an inline element also has no effec
 Logically, this makes sense since you don't want your inline elements to destroy your multi-line text-layout. If you want to do so or need both block-level and inline behavior, you can set display: inline-block  to merge behaviors.
 
 Some example elements are: <a> , <span> , <img> 
+
+#### Pseudo Classes and Pseudo Elements
+
+What is the difference?

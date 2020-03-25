@@ -51,11 +51,13 @@
             <h1>Get the plan you deserve.</h1>
         </section>
         <section id="plans">
-            <!--- defining a class-->
+            <!--- SECTION TITLE - defining a class-->
             <h1 class="section-title">Choose your plan </h1>
-            <p>Make sure you get the most for your money</p>
+
+            <!---SECTION WITH THE PLANS -->
             <div>
-                <article>
+                <!--assigning a class to each article -->
+                <article class="plan">
                     <h1>FREE</h1>
                     <h2>€ 0/month</h2>
                     <h3>For hobby projects or small teams.</h3>
@@ -69,8 +71,10 @@
                         <button>CHOOSE PLAN</button>
                     </div>
                 </article>
-                <article>
-                    <h1>RECOMMENDED</h1>
+<!--adding a class to highlight -->
+                <article class="plan plan--highlighted">
+                    <!--assigning class to h1 following the naming convention this belongs to the plan, starts with plan with a sub-element of the plan. I can name it sub-title, or whatever i want-->
+                    <h1 class="plan__annotation">RECOMMENDED</h1>
                     <h1>PLUS</h1>
                     <h2> €29/month</h2>
                     <h3>For ambitious projects.</h3>
@@ -84,7 +88,8 @@
                         <button>CHOOSE PLAN</button>
                     </div>
                 </article>
-                <article>
+
+                <article class="plan">
                     <h1>PREMIUM</h1>
                     <h2>€99/month</h2>
                     <h3>Your enterprise solution.</h3>

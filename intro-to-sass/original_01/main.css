@@ -1,3 +1,11 @@
+/* If I want to reset all elements to have a certain behavior, like using box-sizing: border-box; then use the star, the universal selector because now this is not using inheritance.
+this way I am targeting every element on its own ,
+I want to target content, padding and border when setting width and height. */
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0;
@@ -5,6 +13,8 @@ body {
 
 #product-overview {
     background: #ff1b68;
+    width: 100%;
+    height: 528px;
     /* adding layer padding to my element */
     /*margin: */
     padding: 10px;
@@ -14,9 +24,10 @@ body {
         border-color: black;
         border-width: 5px;
           */
-    /*margin: 20px;*/
-    width: 100%;
-    height: 528px;
+    margin: 10px;
+    /* adding a box-sizing property to the element where I want to change it, the default is content-box */
+    box-sizing: border-box;
+
 }
 
 /* SELECTOR - h1 */
@@ -62,3 +73,8 @@ h1 {
 }  */
 
 /* every element has a layer - margin, border, padding, */
+
+.main-header {
+    width: 100%;
+
+}

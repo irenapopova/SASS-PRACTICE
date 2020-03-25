@@ -153,6 +153,26 @@ cascading, cascading means that multiple styles/rules can be applied to the same
     margin: 32px;
 }
 
+.key-feature__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.key_feature {
+    display: inline-block;
+    width: 33%;
+    vertical-align: top;
+}
+
+.key-feature__description {
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+}
+
 /* with padding the content of the element is considered plus any margin,  */
 
 /* padding and margin should not overlap hence the padding is added after the margin of child elements */

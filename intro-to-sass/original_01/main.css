@@ -127,13 +127,37 @@ h1 {
 /*below this is a high performance selector, it is not necessary to create an extra class , this below is perfectly fine way of selecting nested element */
 .main-nav__item a {
     text-decoration: none;
+    color: #0e4f1f;
+    font-weight: bold;
+    border-bottom: 5px solid white;
+    padding: 3px 0;
+}
+
+/*with pseudo elements I can control parts of an element */
+.main-nav__item a::after {
+    content: " (Link)";
+    color: red;
 }
 
 /* using a pseudo class to hover over the element and change color*/
-.main-nav__item a:hover {
+/*hover and after can be grouped , they share the same declaration set*/
+.main-nav__item a:hover,
+.main-nav__item a:active {
     color: white;
 }
 
-.main-nav__item a:active {
-    color: white;
+/*targeting the anchor tag, and here order does matter*/
+.main-nav__item--cta a {
+    color:white;
+    background: #ff1b68;
+    padding: 8px 16px;
+    border-radius: 8px;
+
+}
+
+
+/*making first letter bigger*/
+p::first-letter {
+    color: red;
+    font-size: 25px;
 }

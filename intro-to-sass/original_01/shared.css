@@ -1,0 +1,172 @@
+/* If I want to reset all elements to have a certain behavior, like using box-sizing: border-box; then use the star, the universal selector because now this is not using inheritance.
+this way I am targeting every element on its own ,
+I want to target content, padding and border when setting width and height. */
+/* universal selector*/
+* {
+  box-sizing: border-box;
+}
+
+/*=======BODY==========*/
+body {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+}
+
+
+
+
+
+
+/* ======== HEADER ===============*/
+/* the class should be descriptive*/
+.main-header {
+  width: 100%;
+  background: #2ddf5c;
+  /*i use padding value shorthand ,padding top and bottom is set to 8 px, and to left and right 16px*/
+  padding: 8px 16px;
+
+}
+
+/* selecting child div*/
+.main-header>div {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+.main-header__brand {
+  color: red;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 22px;
+}
+
+/*list items are children of unordered list due to inheritance*/
+.main-nav {
+  display: inline-block;
+  text-align: right;
+  width: calc(100% - 74px);
+  /*with vertical align I moved the nav to the right*/
+  vertical-align: middle;
+}
+
+/* the display property alowes to change the behavior of an element from block to inline or even to inline-block which is a mixture or to none to remove it from the DOM even */
+
+.main-nav__items {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* bellow i am setting the class which I assign to a list item, to mix the behavior of the elements */
+/* these elements can go next to each other now but they still behave like block level elements when it comes to setting top and bottom margins, setting paddings, things that are not possible on inline elements.   */
+.main-nav__item {
+  display: inline-block;
+  /*this mixes the behavior of both inline and block elements to set them in one line */
+  margin: 0 16px;
+
+
+}
+
+/*below this is a high performance selector, it is not necessary to create an extra class , this below is perfectly fine way of selecting nested element */
+.main-nav__item a {
+  text-decoration: none;
+  color: #0e4f1f;
+  font-weight: bold;
+  border-bottom: 5px solid white;
+  padding: 3px 0;
+}
+
+/*with pseudo elements I can control parts of an element */
+.main-nav__item a::after {
+  /* content: " (Link)"; */
+  color: red;
+}
+
+/* using a pseudo class to hover over the element and change color*/
+/*hover and after can be grouped , they share the same declaration set*/
+.main-nav__item a:hover,
+.main-nav__item a:active {
+  color: white;
+}
+
+/*targeting the anchor tag, and here order does matter*/
+.main-nav__item--cta a {
+  color: white;
+  background: #ff1b68;
+  padding: 8px 16px;
+  border-radius: 8px;
+
+}
+
+/* styling the cta button*/
+.main-nav__item--cta a:hover,
+.main-nav__item--cta a:active {
+  color: #ff1b68;
+  background: white;
+  border: none;
+
+}
+
+/* ===========BUTTONS ==============*/
+
+
+.button {
+  background: darkgreen;
+  color: white;
+  /* inherit forces the inherited styles to be applied */
+  font: inherit;
+  border: 1.5px solid darkgreen;
+  padding: 8px;
+  border-radius: 8px;
+  font-weight: bold;
+  /* with cursor property , when hover over button a hand appear, can be added to elements i want to be clickable*/
+  cursor: pointer;
+
+}
+
+/* to make buttons clickable and change color on hover*/
+.button:hover,
+.button:active {
+  background: white;
+  color: #0e4f1f;
+
+}
+
+/*when hover over the button the default border around it disapears*/
+.button:focus {
+  outline: none;
+}
+
+
+
+
+/* ==============FOOTER ===============*/
+/*inheritance is overwritten by directly assigned styles.*/
+.main-footer {
+  background: black;
+  padding: 32px;
+  margin-top: 48px;
+}
+
+.main-footer__links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.main-footer_link {
+  display: inline-block;
+  margin: 0 16px;
+}
+
+.main-footer__link a {
+  color: white;
+  text-decoration: none;
+}
+
+.main-footer__link a:hover,
+.main-footer__link a:active {
+  color: lightgray;
+}

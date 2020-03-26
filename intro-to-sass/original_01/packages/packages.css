@@ -1,0 +1,61 @@
+.main {
+  padding-top: 32px;
+}
+
+.package {
+  width: 80%;
+  margin: 16px 0;
+  border: 4px solid green;
+  border-left: none;
+}
+
+/* i am using the combinator*/
+.package a {
+  text-decoration: none;
+  /*the text-decoration is set to none and the color to inherit to use my page default */
+  color: inherit;
+  display: block;
+  /*so to  ensure that the anchor tag takes the full available width of the surrounding section */
+  padding: 32px;
+}
+
+.subtitle {
+  color: darkgray;
+}
+
+.package__subtitle {
+  color: #979979;
+}
+
+.package__info {
+  padding: 16px;
+  border: 1px solid green;
+  font-size: 20px;
+  color: #0e4f1f;
+  background: white;
+}
+
+/*I want add different background to each plan , i HAVE TO ASSIGN IDs to the plans in html file because if I need to select every plan differently, then IDs are for that */
+
+/* targeting the plus id plan*/
+#plus {
+  background: rgba(213, 255, 220, 0.95);
+}
+
+/*assigning a style for the free plan */
+#free {
+  background: rgba(234. 252, 237, 0.95);
+}
+
+#premium {
+  background: rgba(14, 79, 31, 0.9);
+}
+
+/* to get different text colors, I use the selector plus combinator */
+#premium .package__title {
+  color: white;
+}
+
+#package .package__subtitle {
+  color: #bbb;
+}

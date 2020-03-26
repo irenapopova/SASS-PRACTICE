@@ -56,6 +56,10 @@
 /*assigning a style for the free plan */
 #free {
   background: rgba(234. 252, 237, 0.95);
+  float: right;
+  border-right: none;
+  border-left: 4px solid green;
+  text-align: right;
 }
 
 #premium {

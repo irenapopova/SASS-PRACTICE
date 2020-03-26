@@ -59,9 +59,13 @@
   float: right;
   border-right: none;
   border-left: 4px solid green;
+  /*the green border stays green when hover over the plan and the other two borders are red it is because of specificity 
+  border-left is the top rule and it has a higher specificity than any rule below it, like my hover rule, THIS RULE HAS A HIGHER SPECIFICITY BECAUSE I USE ID SELECTOR*/
   text-align: right;
 }
 
+/*! ID selectors have higher specificity than class selectors or pseudo selectors*/
+/* */
 #premium {
   background: rgba(14, 79, 31, 0.9);
 }

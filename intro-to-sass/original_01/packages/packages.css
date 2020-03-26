@@ -41,6 +41,11 @@
   background: white;
 }
 
+/* with the property clear:both; which means clear floats on both sides,left  and right, the two values I can assign here , this means any elements coming after this element or an element whit that class will not respect previous floats  */
+.clearfix {
+  clear: both;
+}
+
 /*I want add different background to each plan , i HAVE TO ASSIGN IDs to the plans in html file because if I need to select every plan differently, then IDs are for that */
 
 /* targeting the plus id plan*/

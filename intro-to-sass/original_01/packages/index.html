@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>uHost</title>
+  <link rel="shortcut icon" href="favicon.png">
+  <link href="https://fonts.googleapis.com/css?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <!--this is imported from the root folder so two dots-->
+  <link rel="stylesheet" href="../shared.css">
+  <!--importing from packages.css, and it is added after the shared file, so I have at least the possiblity of overwriting any styles I set up in the shared.css -->
+  <link rel="stylesheet" href="packages.css">
+
+<body>
+
+  <header class="main-header">
+    <div>
+      <a href="../index.html" class="main-header__brand">uHost</a>
+    </div>
+
+    <!--I can select nav with a direct child combinator-->
+    <!--it is better to use direct selectors like the class selector.-->
+    <nav class="main-nav">
+
+      <ul class="main-nav__items">
+        <li class="main-nav__item">
+          <a href="index.html">Packages</a>
+        </li>
+        <!--more than one class can be added to an element-->
+        <li class="main-nav__item">
+          <!--anchor tag <a>-->
+          <a href="../customers/index.html">Customers</a>
+          <!--what the display block property enforces is  with the display property I can change -->
+          <a href="../customers/index.html" style="display: none">Customers</a>
+          <!--The display  property can be set to none and can be invisible or transparent, it has also taken out of the document , but it is part of the DOM it is not removed from there , it is removed just from the visible document flow -->
+        </li>
+
+        <li class="main-nav__item main-nav__item--cta">
+          <a href="../start-hosting/index.html">Start Hosting</a>
+        </li>
+
+        </ui>
+
+    </nav>
+  </header>
+  <main>
+    <!--I can name the class whatever I wan , depends what I am building-->
+    <section class="package" id="plus">
+      <a href="#">
+        <h1 class="package__title">Our PLUS Plan</h1>
+        <h2 class="package__subtitle">The most popular choice of our customers.</h2>
+        <p class="package__info">Benefit from increased storage and faster support to ensure that your mission-critical
+          data and applications
+          are always available!</p>
+      </a>
+    </section>
+
+    <!--assigning IDs to the plans so they can have different background-->
+    <section class="package" id="free">
+      <a href="#">
+        <h1 class="package__title">Our FREE Plan</h1>
+        <h2 class="package__subtitle">An extremely solid start into our hosting world.</h2>
+        <p class="package__info">Get started immediately at zero cost!</p>
+      </a>
+    </section>
+
+    <section class="package" id="premium">
+      <a href="#">
+        <h1 class="package__title">Our PREMIUM Plan</h1>
+        <h2 class="package__subtitle">All your enterprise needs. Instant support, guaranteed uptime. </h2>
+        <p class="package__info">The best solution for small to large enterprises. Because hosting shouldn't be in the
+          way!</p>
+      </a>
+    </section>
+
+
+  </main>
+  <!-- ========FOOTER ========== -->
+  <!--assign a footer class-->
+  <footer class="main-footer">
+
+    <nav>
+      <ul class="main-footer__links">
+
+        <li class="main-footer__link">
+          <a href="#">Support</a>
+        </li>
+
+        <li class="main-footer__link">
+          <a href="#">Terms of Use</a>
+        </li>
+
+      </ul>
+    </nav>
+
+  </footer>
+</body>
+
+</html>

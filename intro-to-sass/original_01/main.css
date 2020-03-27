@@ -14,7 +14,11 @@ body {
 #product-overview {
 
     background-image: url("tower-bridge.jpg");
-    background-size: contain;
+    background-size: cover;
+    background-position: left 10% bottom 66%;
+    /*the default value is 50%*/
+    /*positioning the image */
+    /*with the percentage value I can define how much of the axes space */
     background-repeat: no-repeat;
     width: 100%;
     height: 528px;

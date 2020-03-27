@@ -7,18 +7,37 @@
   @return map-get($font-weights, $weight-name); // eight-name is the key
 }
 
+@mixin flexCenter ($direction) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: $direction;
+}
+
+@mixin theme($light-theme:true) {
+  @if $light-theme {
+    background: lighten($primary-color, 100%);
+    color: darken($text-color, 100%);
+  }
+}
+
+//the content will be passed when the @mixin is called
+@mixin mobile {
+  @media(max-width:$mobile) {
+    @content;
+  }
+}
+
+
 
 body {
   background: $primary-color;
   color: $text-color;
-
-
 }
 
 .main {
-  display: flex;
-  justify-content: center;
-  widows: 80%;
+  @include flexCenter(row); //passing an argument -column , by default is row,
+  width: 80%;
   margin: 0 auto;
 
   // using interpolation wrapping with curly braces
@@ -29,4 +48,12 @@ body {
       color: pink;
     }
   }
+
+  @include mobile {
+    flex-direction: column;
+  }
+}
+
+.light {
+  @include theme($light-theme: true);
 }

@@ -2,11 +2,35 @@
   padding-top: 32px;
 }
 
+.background {
+  /*with the two dots i MOVE ONE LEVEL UP*/
+  background: url("../images/plans-bg.jpg");
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  /*with this value the image is out of the actual document flow and therefore it does't exist  */
+  z-index: -1;
+
+}
+
 .package {
   width: 80%;
   margin: 16px 0;
   border: 4px solid green;
   border-left: none;
+  position: relative;
+
+}
+
+.package__badge {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 20px;
+  font-size: 12px;
+  color: white;
+  background-color: #ff5454;
+  padding: 8px;
 }
 
 .package:hover,

@@ -61,6 +61,13 @@ cascading, cascading means that multiple styles/rules can be applied to the same
 
 /*====== Adding PLANS ============*/
 
+.plan__list {
+    width: 80%;
+    margin: auto;
+    /*centering the 3 elements of the block, within their div and therefore this section title perfectly aligns with the middle highlighted box. */
+    text-align: center;
+}
+
 /* adding the plan class selector */
 .plan {
     background: #d5ffdc;

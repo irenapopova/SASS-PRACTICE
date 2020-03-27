@@ -14,3 +14,5 @@ By default every element has applied z-index auto
 #### WORKING WITH OVERFLOW
 
 ### Understanding the stacking context
+
+#### POSITIONING IMAGES

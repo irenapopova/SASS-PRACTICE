@@ -4,14 +4,17 @@ html {
   border: 5px solid white;
   margin: 15px;
   height: 2000px;
-
+  overflow: hidden;
 }
 
+/*the body is the parent element */
 body {
   background: #fa923f;
   padding: 20px;
   border: 5px solid black;
   margin: 0;
+  overflow: hidden;
+
 }
 
 .parent {
@@ -19,7 +22,7 @@ body {
   padding: 20px;
   border: 5px solid black;
   margin: 0;
-
+  overflow: hidden;
 }
 
 .parent div {
@@ -30,16 +33,23 @@ body {
   margin: 10px;
 }
 
-/* */
+
+/*
 .parent .child-1 {
-  position: fixed;
+  position: relative;
   width: 400px;
-  top: 0;
+  top: 30px;
   /* moving the nav bar*/
-  left: 0;
-  margin: 0;
-  width: 100%;
-  /* giving full with to the nav bar*/
-  box-sizing: border-box;
-  /*positioning the nav Bar and to stick to 100% */
-}
+
+/*  left: 0;
+right: 50px;
+margin: 0;
+width: 100%;
+/* giving full with to the nav bar*/
+/* box-sizing: border-box; */
+/*positioning the nav Bar and to stick to 100% */
+/*}
+
+*/
+
+/*sticky position is combination of relative and absolute*/

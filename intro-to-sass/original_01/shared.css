@@ -12,18 +12,15 @@ body {
   margin: 0;
 }
 
-
-
-
-
-
 /* ======== HEADER ===============*/
 /* the class should be descriptive*/
 .main-header {
   width: 100%;
+  position: fixed;
   background: #2ddf5c;
   /*i use padding value shorthand ,padding top and bottom is set to 8 px, and to left and right 16px*/
   padding: 8px 16px;
+  z-index: 1;
 
 }
 

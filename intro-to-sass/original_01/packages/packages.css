@@ -2,9 +2,12 @@
   padding-top: 32px;
 }
 
+/*background class selector*/
 .background {
   /*with the two dots i MOVE ONE LEVEL UP*/
-  background: url("../images/plans-bg.jpg");
+  background: url("../images/plans-bg.jpg") center/cover;
+  /*grayscale function takes a percentage defining how much to turn it to gray, and 100% is the maximum*/
+  filter: grayscale(45%);
   width: 100%;
   height: 100%;
   position: fixed;

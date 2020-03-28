@@ -37,15 +37,23 @@ body {
 
 .main {
   @include flexCenter(row); //passing an argument -column , by default is row,
-  width: 80%;
+  width: 80% - 40%; //calc/calculation
   margin: 0 auto;
 
   // using interpolation wrapping with curly braces
-  #{&}__paragraph {
+  #{&}__paragraph1 {
     font-weight: weight(regular);
 
     &:hover {
       color: pink;
+    }
+  }
+
+  #{&}__paragraph2 {
+    @extend .main__paragraph1;
+
+    &:hover {
+      color: $accent-color;
     }
   }
 

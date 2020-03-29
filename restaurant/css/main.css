@@ -19,7 +19,6 @@ body {
     transform: translate(-50%, -50%); }
   .header-banner {
     text-align: center;
-    color: #fff;
     position: absolute;
     top: 50%;
     left: 50%;

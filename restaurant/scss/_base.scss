@@ -3,6 +3,8 @@ $color-dark: #262626;
 $color-black: #000;
 $color-primary: #d3ab55;
 $color-secondary: #bbb;
+$color-white: #fff;
+
 
 $font-dancingScript: 'Dancing Script',
 cursive;
@@ -17,10 +19,10 @@ sans-serif;
   align-items: center;
 }
 
-@mixin textStyles {
+@mixin textStyles($transform: uppercase) {
   font-weight: 300;
   letter-spacing: 2px;
-  text-transform: uppercase;
+  text-transform: $transform;
 }
 
 @mixin centering($topValue) {
@@ -30,6 +32,12 @@ sans-serif;
   left: 50%;
   transform: translate(-50%, -50%);
 
+}
+
+// place holder selector 
+%fullSpace {
+  width: 100%;
+  height: 100%;
 }
 
 * {

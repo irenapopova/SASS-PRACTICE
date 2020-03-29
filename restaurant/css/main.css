@@ -128,7 +128,10 @@ body {
 .card {
   width: 33.3333%;
   height: 30vw;
-  position: relative; }
+  position: relative;
+  overflow: hidden; }
+  .card:hover .card-overlay {
+    left: 0; }
   .card-overlay {
     position: absolute;
     top: 0;
@@ -162,7 +165,11 @@ body {
       font-size: 14px;
       font-weight: bold;
       text-transform: uppercase;
-      letter-spacing: 1px; }
+      letter-spacing: 1px;
+      border: 1px solid #d3ab55;
+      border-radius: 30px;
+      outline: none;
+      cursor: pointer; }
   .card-img {
     object-fit: cover;
     opacity: .5; }

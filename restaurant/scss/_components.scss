@@ -57,6 +57,11 @@
   //
   outline: none;
   cursor: pointer;
+  transition: all .4s;
+
   // nesting 
-  &
+  &:hover {
+    background-color: $color-primary;
+    color: $color-dark;
+  }
 }

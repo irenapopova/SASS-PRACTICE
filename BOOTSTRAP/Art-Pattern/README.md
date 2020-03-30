@@ -1,8 +1,8 @@
-#### CSS - BOOTSTRAP 
+#### CSS - BOOTSTRAP
 
 #### DCI Assignment Task
 
-#### The project is part of the study digital program at Digital Career Institute.
+#### The project is part of the digital career program at Digital Career Institute.
 
 #### Screenshot
 
@@ -15,8 +15,6 @@
 ```css
 /* style the Bootstrap classes
 ```
-
-- [Click here to view the CSS Code](css/style.css)
 
 ### Resources
 

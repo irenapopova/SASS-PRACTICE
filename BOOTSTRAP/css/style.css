@@ -1,0 +1,25 @@
+/* CSS and BOOTSTRAP*/
+
+/*Bulma, Foundation, Pure*/
+/*Twitter Bootsrtap*/
+
+/*What is better to use ?*/
+
+/*bootstrap is build with grid system , flexbox*/
+/*min is minified file min.css, compressed file*/
+/*bootsrap with scss and react, webpack*/
+div {
+  /*width: 3rem; */
+  /*height: 3rem; */
+  border: 3px solid black;
+}
+
+/*
+.red {
+  background-color: red;
+}
+
+.pink {
+  background-color: pink;
+}
+*/

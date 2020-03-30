@@ -59,6 +59,12 @@
         display: block;
         margin: 20px;
         text-align: center;
+        transition: all .5s;
+
+        &:hover {
+          color: $color-primary;
+          letter-spacing: 4px;
+        }
       }
 
     }

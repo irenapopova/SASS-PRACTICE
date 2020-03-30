@@ -6,7 +6,7 @@
 
 #### Screenshot
 
-![alt text](./images/Screenshot-art-patterns.png)
+![alt text](./images/screenshot.png)
 
 #### Files
 

@@ -3,7 +3,7 @@
 
 
 #### SCREENSHOT
-![alt text](https://image/ma/.png)
+![alt text](img/Screenshot-01.png)
 
 ```html
 <!-- in HTML used  HTML Semantic Elements and
@@ -23,9 +23,9 @@
 - [Intro to Bootstrap- Bootstrap ](https://getbootstrap.com/docs/4.4/layout/overview/)
 - [Bootstrap Components- mdbootstrap](https://mdbootstrap.com/docs/jquery/components/demo/)
 
-#### Result - 
+#### Result - screenshot
 
-[delpoyment](https://#)
+[](https://#)
 
 
 

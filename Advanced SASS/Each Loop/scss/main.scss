@@ -1,0 +1,13 @@
+// each loop executes block of code over and over again until elements are expired,
+$colors: red green blue orange;
+
+@each $color in $colors {
+    .paragraph-#{$color} {
+        background-color: $color;
+    }
+}
+
+
+// NOTES
+
+//  The @each directive takes the form @each $var in <list>. 

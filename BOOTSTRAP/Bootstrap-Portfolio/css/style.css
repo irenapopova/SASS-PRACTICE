@@ -1,0 +1,316 @@
+body {
+    font-family: Nunito;
+    color: #444;
+
+}
+
+h1,
+h2,
+h3,
+h4 {
+    color: #222;
+    font-family: 'Permanent Marker', cursive;
+}
+
+/************************************
+            HEADER
+************************************/
+nav {
+    background-color: #444;
+    padding: 1em;
+    margin: 1.5em 0 2em 0;
+    border-radius: 0 60px 60px 0;
+    border-width: 3px 3px 3px 0;
+    box-shadow: 5px 10px 20px rgba(0, 0, 0, 0.56);
+    color: #FFF;
+    width: 95%;
+}
+
+nav>a.navbar-brand {
+    font-family: 'Permanent Marker', cursive;
+    text-transform: uppercase;
+    font-size: 300%;
+    margin: 0 auto;
+}
+
+ul.navbar-nav {
+    margin: 0 auto;
+    text-align: center;
+}
+
+ul.navbar-nav a {
+    text-transform: uppercase;
+}
+
+ul.navbar-nav li:hover {
+    /* Start the shake animation and make the animation last for 0.5 seconds */
+    animation: shake 0.5s;
+    /* When the animation is finished, start again */
+    animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+    0% {
+        transform: translate(1px, 1px) rotate(0deg);
+    }
+
+    10% {
+        transform: translate(-1px, -2px) rotate(-1deg);
+    }
+
+    20% {
+        transform: translate(-3px, 0px) rotate(1deg);
+    }
+
+    30% {
+        transform: translate(3px, 2px) rotate(0deg);
+    }
+
+    40% {
+        transform: translate(1px, -1px) rotate(1deg);
+    }
+
+    50% {
+        transform: translate(-1px, 2px) rotate(-1deg);
+    }
+
+    60% {
+        transform: translate(-3px, 1px) rotate(0deg);
+    }
+
+    70% {
+        transform: translate(3px, 1px) rotate(-1deg);
+    }
+
+    80% {
+        transform: translate(-1px, -1px) rotate(1deg);
+    }
+
+    90% {
+        transform: translate(1px, 2px) rotate(0deg);
+    }
+
+    100% {
+        transform: translate(1px, -2px) rotate(-1deg);
+    }
+}
+
+/************************************
+            ALL SECTIONS
+************************************/
+.container {
+    margin-top: 5em;
+}
+
+.losContainers {
+    text-align: center;
+    border: solid #b1b1b1;
+    border-width: 10px 0 0 0;
+    padding: 1em;
+    margin-bottom: 1em;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.45);
+
+}
+
+/************************************
+            SECTION: Bio
+************************************/
+#content-container h1 {
+    font-family: 'Permanent Marker', cursive;
+    text-align: right;
+    color: #00a797;
+}
+
+#content-container img {
+    width: 250px;
+    height: 230px;
+    margin: 0 0 1em 0;
+    border-radius: 50%;
+}
+
+#content-container p {
+    padding: 1em;
+}
+
+.list-group-item.active {
+    background-color: #00a797 !important;
+    border-color: #00a797 !important;
+}
+
+/************************************
+            SECTION: Social
+************************************/
+.social-icon {
+    width: 100px;
+    transition: all 0.5s linear;
+}
+
+.social-icon:hover {
+    transform: rotate(45deg);
+}
+
+#social-container h2 {
+    font-family: 'Permanent Marker', cursive;
+    color: #00a797;
+}
+
+/************************************
+        SECTION: Portfolio
+************************************/
+.title-right {
+    background: url('../assets/work.png') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    border: #FFF;
+    width: 95%;
+    border-width: 3px 0 3px 3px;
+    border-radius: 100px 0 0 100px;
+    right: 0;
+    position: absolute;
+    height: 8em;
+    box-shadow: inset 0px 0px 15px 10px rgba(34, 34, 34, 0.7);
+    padding: 1em;
+    margin-top: 2em;
+}
+
+.title-right h2 {
+    color: #FFF;
+    font-size: 3em;
+    text-shadow: 0 0 5px rgb(0, 0, 0);
+    padding-top: 0.3em;
+    padding-left: 0.5em;
+}
+
+#portfolio-container {
+    padding: 10em 0 1em 0;
+}
+
+.portfolio-item {
+    height: 500px;
+    margin: 0 auto 1em auto;
+    position: relative;
+    opacity: 1;
+    border-radius: 5px;
+    transition: all 0.6s linear;
+    box-shadow: 3px 5px 10px rgba(0, 0, 0, 0.45);
+}
+
+.portfolio-item:hover {
+    position: relative;
+    z-index: 2;
+    opacity: 1;
+    border: 0;
+    transform: scale(1.1);
+}
+
+.portfolio-label {
+    background-color: #00a797;
+    text-align: center;
+    padding: 0.3em;
+    position: absolute;
+    width: 100%;
+    top: 65%;
+    color: #FFF;
+}
+
+.hidden-text {
+    height: 100%;
+    opacity: 0;
+    background-color: #b1b1b1;
+    padding: 2em;
+    color: #FFF !important;
+    transition: all 1s linear;
+}
+
+.hidden-text>h4 {
+    color: #FFF !important;
+}
+
+.hidden-text:hover {
+    opacity: 1;
+}
+
+.hidden-links {
+    text-align: center;
+}
+
+.hidden-links>a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.hidden-links>a:hover {
+    color: #444;
+}
+
+.p1 {
+    background: #FFF url('../assets/Screenshot-quiz.png') center no-repeat;
+    background-size: cover;
+}
+
+.p2 {
+    background: #FFF url('../assets/Screenshot-weather.png') center no-repeat;
+    background-size: cover;
+}
+
+.p3 {
+    background: #FFF url('../assets/Screenshot-photography.png') center no-repeat;
+    background-size: cover;
+}
+
+.p4 {
+    background: #FFF url('../assets/screenshot-online-radio.png') center no-repeat;
+    background-size: cover;
+}
+
+.p5 {
+    background: #FFF url('../assets/screenshot.png') center no-repeat;
+    background-size: contain;
+}
+
+.p6 {
+    background: #FFF url('../assets/screenshot-arcade.png') center no-repeat;
+    background-size: contain;
+}
+
+.p7 {
+    background: #FFF url('../assets/screenshot.png') center no-repeat;
+    background-size: contain;
+}
+
+.p8 {
+    background: #FFF url('../assets/irena_bg.png') center no-repeat;
+    background-size: cover;
+}
+
+/************************************
+        SECTION: Footer
+************************************/
+footer,
+footer a {
+    background-color: #444;
+    color: #FFF;
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #b1b1b1;
+    text-decoration: none;
+}
+
+footer li {
+    list-style: none;
+}
+
+footer strong {
+    color: #b1b1b1;
+}
+
+#interests-strip {
+    padding: 1em;
+    background-color: #00a797;
+}
+
+#footer-msg {
+    padding: 1.5em 2em 0.5em 2em;
+}

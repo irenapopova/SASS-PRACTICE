@@ -186,10 +186,3 @@
     }
   }
 }
-
-&-copyright-paragraph {
-  font-family: $font-josefinSans;
-  font-size: 18px;
-  color: $color-secondary;
-  @include textStyles(capitalize);
-}

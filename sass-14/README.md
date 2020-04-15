@@ -1,15 +1,8 @@
-DCI -SASS Project
+DCI -SASS Project (Syntactically Awesome Style Sheet)
 
+SASS Practice
 
+npm init
+npm install sass
 
-
-
-.gitignore
-dist/
-
-src/styles
-
-node-modules
-
-
-npm install - to install the dependences for the project 
+npm install - to install the dependences for the project

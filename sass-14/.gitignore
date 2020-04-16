@@ -1,6 +1,6 @@
 node_modules/
 dist/
-
+src/styles/
 .DS_Store
 #ths is comment : .gitgnore file should be in the root folder outside the src foolder
 #the / is for directories not files 

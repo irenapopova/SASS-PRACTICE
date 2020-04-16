@@ -1,4 +1,4 @@
-background {
+/*background {
   color: yellow;
 }
 
@@ -9,3 +9,18 @@ h1 {
 h2 {
   color: black;
 }
+*/
+
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import "abstracts/variables";
+
+// 2. Base
+@import "base/base", "base/fonts", "base/typography";
+
+// 3. Layout
+@import "layout/header";
+
+// 4. Page
+@import "pages/home";

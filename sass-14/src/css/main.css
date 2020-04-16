@@ -66,13 +66,16 @@ h3 {
   background-color: #684e79; }
 
 .palette__color {
-  width: 150px;
+  width: 100%;
   height: 100px; }
 
 .palette {
-  width: 100%; }
+  width: 100%;
+  text-align: center;
+  margin-top: 10%; }
 
 .palette__box {
   display: inline-block;
-  border-color: black solid;
-  border-radius: 3px; }
+  border: lightgray solid 3px;
+  box-shadow: 5px 5px 5px lightgrey;
+  margin: 10px; }

@@ -9,7 +9,14 @@ $color-white-dark: #f5f5f5;
 $color-grey: #ccc;
 $color-grey-dark: #666;
 
-$color-yellow: #ffc83f;
-$color-pink: #fa5e5b;
-$color-blue: #1d508d;
-$color-purple: #684e79;
+
+
+$colors: (yellow: #ffc83f,
+  pink: #fa5e5b,
+  blue: #1d508d,
+  purple: #684e79);
+
+
+h1 {
+  background-color: $color-grey;
+}

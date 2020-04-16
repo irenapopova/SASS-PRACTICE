@@ -37,11 +37,11 @@
     border-radius: 3px;
 
     &--1 {
-      background-color: $color-yellow;
+      background-color: map-get($colors, 'yellow');
     }
 
     &--2 {
-      background-color: $color-pink;
+      background-color: map-get($colors, 'pink');
     }
 
     &--3 {

@@ -4,19 +4,29 @@
   "description": "sass-template project",
   "main": "index.js",
   "scripts": {
+    "start": "run-p liveserver watch:styles",
     "build-css": "node-sass --include-path src/scss src/scss/main.scss src/css/main.css",
     "watch-sass": "nodemon -e scss -x \"npm run build-css\"",
     "ls": "live-server --open=src --entry-file=index.html"
+    
+    "build:styles": "sass src/scss/main.scss:src/styles/style.css",
+    "watch:styles": "sass src/scss/main.scss:src/styles/style.css --watch",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' src/styles/style.css -o src/styles/style.css",
+    "clean": "rm -rf dist",
+    "clean:styles": "rm -rf src/styles",
+    "copy": "mkdir dist && rsync -avr --exclude=\"/scss\" src/ dist",
+    "publish": "gh-pages -d dist"
   },
   "keywords": [
     "sass-simple",
     "template"
   ],
-  "author": "Irena Popova",
+  "author": "Irena",
   "license": "MIT",
   "dependencies": {
     "live-server": "^1.2.1",
     "node-sass": "^4.13.1",
     "nodemon": "^2.0.3"
+    "brand-colors": "^2.1.1"
   }
 }

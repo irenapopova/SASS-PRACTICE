@@ -2,6 +2,8 @@
 
 ### Color palette
 
+Second SASS Assignment
+
 Class assignment is adding more color palette two yesterday project
 
 Instructions:

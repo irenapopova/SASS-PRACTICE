@@ -3,7 +3,9 @@
 ### Color palette
 
 Class assignment is adding more color palette two yesterday project
+
 Instructions:
+
 Look at the mockup image for a guide.
 Nest selectors where possible.
 Use variables so that you can update and change the main colors easily.

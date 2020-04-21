@@ -1,0 +1,3 @@
+### scss exercise
+
+### Color palette

@@ -1,0 +1,16 @@
+body {
+  background-color: $back-color;
+}
+
+@mixin flex {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.container {
+  background: transparent;
+  border: 1px solid rgb(175, 11, 11);
+  height: 15rem;
+  transform: translateY(100%);
+  @include flex;
+}

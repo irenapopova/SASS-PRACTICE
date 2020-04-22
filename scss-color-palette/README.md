@@ -2,7 +2,7 @@
 
 ### Color Palette - Task 2
 
-Second SASS Assignment
+##### Second SASS Assignment
 
 Class assignment is adding more color palette two yesterday project
 

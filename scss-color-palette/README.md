@@ -1,6 +1,6 @@
 ### DCI scss exercise
 
-### Color palette
+### Color Palette - Task 2
 
 Second SASS Assignment
 

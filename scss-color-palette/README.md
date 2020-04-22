@@ -16,4 +16,6 @@ The page must be responsive.
 You should have a guide of at least four colors.
 Use darken and lighten on your color guide.
 
-screenshot
+### SCREENSHOT
+
+![alt text](color-palette-task-2.png)

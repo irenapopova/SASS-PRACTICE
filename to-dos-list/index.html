@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pl-PL">
+
+<head>
+    <meta charset="UTF-8">
+    <title>ToDo List</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,300,400,700,900&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    <link rel="stylesheet" href="css/main.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header class="header">
+            <h1>My task list</h1>
+            <button id="add-new-task-btn" class="btn-dark-blue">Add new</button>
+        </header>
+
+        <section class="form">
+
+            <form action="" id="form">
+
+                <label for="task-input">Title</label>
+                <input type="text" name="form-task" id="task-input" class="task-input" placeholder="Title">
+
+                <label for="date-input">Date</label>
+                <input type="date" name="form-date" id="date-input" class="date-input" placeholder="Date" required>
+
+                <p>Priority</p>
+                <div class="priority-box">
+                    <label for="p1-input">
+                        <input type="radio" name="form-priority" value="1" id="p1-input">
+                        1
+                    </label>
+                    <label for="p2-input">
+                        <input type="radio" name="form-priority" value="2" id="p2-input">
+                        2
+                    </label>
+                    <label for="p3-input">
+                        <input type="radio" name="form-priority" value="3" id="p3-input">
+                        3
+                    </label>
+                    <label for="p4-input">
+                        <input type="radio" name="form-priority" value="4" id="p4-input">
+                        4
+                    </label>
+                    <label for="p5-input">
+                        <input type="radio" name="form-priority" value="5" id="p5-input">
+                        5
+                    </label>
+                </div>
+
+                <label for="textarea-input">Task description</label>
+                <textarea name="form-description" cols="100" rows="3" id="textarea-input" class="textarea-input"
+                    placeholder="Task description"></textarea>
+
+                <div class="form-bottom">
+                    <button id="form-submit-btn" class="form-submit-btn" type="submit">Save</button>
+                    <div id="error-message" class="error-message"></div>
+                </div>
+
+            </form>
+        </section>
+
+        <section class="filters">
+
+            <div class="filters-row-1">
+                <h2 class="filters-title">Filter tasks</h2>
+            </div>
+
+            <div class="filters-row-2">
+                <div class="filters-row-2-btns">
+                    <button type="button" id="filter-done-btn" class="filter-done-btn">Show finished</button>
+                    <button type="button" id="filter-undone-btn" class="filter-undone-btn">Show unfinished</button>
+                </div>
+
+                <form action="" id="filter_priority" class="filter_priority">
+                    <label class="filters-priority-title">Priority</label>
+
+                    <div class="custom-select">
+                        <select name="filter-priority" id="filter-priority">
+                            <option value="all">Choose</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                        </select>
+                    </div>
+                </form>
+            </div>
+
+            <div class="filters-row-3">
+                <button type="button" id="filters-reset-btn" class="filters-reset-btn">Show all</button>
+            </div>
+
+        </section>
+
+        <section class="list">
+            <h2 id="task-list-title" class="task-list-title">Tasks</h2>
+
+            <ul class="hidden-always">
+                <li id="li-to-clone" class="hidden-always">
+
+                    <div class="task-head-panel">
+
+                        <div class="li-col-1">
+                            <button class="task-show">
+                                <span class="task-show-dots">...</span>
+                            </button>
+                        </div>
+
+                        <div class="li-col-2">
+                            <h3 class="task-name"></h3>
+                            <span class="task-date"></span>
+                        </div>
+
+                        <div class="li-col-3">
+                            <span class="task-priority"></span>
+                        </div>
+
+                        <div class="li-col-4">
+                            <button class="task-complete">
+                                Begging
+                                <i class="fa fa-check" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                        <div class="li-col-5">
+                            <button class="task-delete">
+                                UEnd
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                                <i class="fa fa-minus" aria-hidden="true"></i>
+                            </button>
+                        </div>
+
+                    </div>
+
+                    <div class="task-descr-panel">
+                        <p class="task-description"></p>
+                    </div>
+
+                    <span class="task-id hidden-always"></span>
+                </li>
+            </ul>
+
+            <ul id="task-list" class="task-list">
+
+            </ul>
+
+
+            <div class="li-remove-btns">
+                <button id="remove-finished-btn" class="remove-finished-btn">Delete<br>finished tasks</button>
+                <button id="remove-all-btn" class="remove-all-btn">Delete<br>all tasks</button>
+            </div>
+        </section>
+    </div>
+
+
+    <script src="js/app.js"></script>
+</body>
+
+</html>

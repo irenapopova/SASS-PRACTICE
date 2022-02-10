@@ -25,7 +25,7 @@
   "dependencies": {
     "brand-colors": "^2.1.1",
     "live-server": "^1.2.1",
-    "node-sass": "^4.13.1",
+    "node-sass": "^7.0.0",
     "nodemon": "^2.0.3",
     "run-p": "0.0.0"
   }
